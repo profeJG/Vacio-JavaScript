@@ -1,20 +1,22 @@
 /**
- * @author: Escriba su nombre y apellidos aquí.
- */
-
-/**
  * Comprueba la mayoría de edad
- * @param {int} edad 
+ * @param {*} edad 
  * @returns true | false;
  */
 
 function esMayorEdad(edad)
 {
-    return 0; // Debe escribir el código correcto AQUÍ.
+    // Completa el código de la función
+    if (edad>17) {
+        return 1
+      } else {
+        return 0
+      }  
+    
 }
 /**
  * Obtiene la calificación equivalente a la nota numérica
- * @param {int} nota: entero. 
+ * @param {*} nota: integer. 
  * @returns  cadena: Calificación
  */
 function obtenerCalificacion(nota)
@@ -22,8 +24,42 @@ function obtenerCalificacion(nota)
     var calificacion="Incorrecta";
 
             // Estructura de control *** switch(nota) ***
-            
-            // Complete el codigo AQUÍ
+            // Completa el código de la función
+            switch(nota){
+                case 0:
+                    calificacion = "Muy deficiente.";
+                      break;
+                    case 1:
+                    calificacion = "Muy deficiente.";
+                    break;
+                    case 2:
+                    calificacion = "Muy deficiente.";
+                      break;
+                    case 3:
+                    calificacion = "Deficiente.";
+                      break;
+                    case 4:
+                    calificacion = "Deficiente.";
+                      break;
+                    case 5:
+                    calificacion = "Suficiente.";
+                      break;
+                    case 6:
+                      calificacion = "Bien";
+                      break;
+                      case 7:
+                      calificacion = "Notable";
+                      break;
+                      case 8:
+                      calificacion = "Notable";
+                      break;
+                      case 9:
+                      calificacion = "Sobresaliente";
+                      break;
+                      case 10:
+                          calificacion = "Sobresaliente";
+                          break;
+              } 
 
             return calificacion;
 }
@@ -54,8 +90,3 @@ function averiguarCalificacion()
         
     document.getElementById("txtCalificacion").innerHTML="Calificación: "+obtenerCalificacion(nota);
 }
-
-module.exports={
-    esMayorEdad,
-    obtenerCalificacion,
-};

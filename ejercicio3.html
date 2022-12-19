@@ -1,7 +1,6 @@
-<!-- Escribe aquí tu nombre-->
 <html lang="es">
     <head>
-        <title>Ejercicio 4. Calcular nota</title>
+        <title>Ejercicio 3. Calcular nota</title>
     </head>
     <body>
         <h1>Cálculo de notas</h1>
@@ -25,21 +24,24 @@
 
             // Estructura de control *** if - else ***
 
-            /*
-            si n>=0 y n <3 entonces
-                calificacion <-- Muy deficiente
-            sino si n>=3 y n<5 entonces
-                calificacion <-- Insuficiente
-            sino si n>=5 y n<6 entonces
-                calificacion <-- Suficiente
-            sino si n>=6 y n<7 entonces
-                calificación <-- Bien
-            sino si ...
+            if (nota<3) {
+  calificacion = "Muy deficiente."
+} else if (nota<=3 && nota < 5) {
+    calificacion = "Deficiente."
+} else if (nota>=5 && nota < 6) {
+    calificacion = "Suficiente."
+}
+else if (nota>=6 && nota < 7) {
+    calificacion = "Bien."
+}else if (nota>=7 && nota < 9) {
+    calificacion = "Notable."}
+    else if (nota>=9 && nota <= 10) {
+    calificacion = "Sobresaliente."}
+    else {
+    calificacion = "Fuera de rango."
+}
 
-            sino calificacion <-- Incorrecta
-            */
 
-            // Mostramos el resultado
             alert('Una nota de '+nota+' es '+calificacion);
             console.log('Una nota de '+nota+' es '+calificacion);                
         </script>
