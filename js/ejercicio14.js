@@ -6,12 +6,16 @@
  */
 function calcularMedia(v)
 {
-    var total = 0;
+   if (v.length == 0){
+    return 0
+   } 
+   else {  var total = 0;
 for(var i = 0; i < v.length; i++) {
     total += v[i];
 }
 var avg = total / v.length;
     return avg;
+}
 }
 /**
  * Obtiene la nota mínima
