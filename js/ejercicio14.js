@@ -24,9 +24,13 @@ var avg = total / v.length;
  */
 function calcularMinimo(v)
 {
-    let minima= Math.min.apply(null,v)      //Number.MIN_VALUE; // <-- CORRIGE E IMPLEMENTA EL CODIGO
+    if (v.length == 0){
+        return 0
+       } 
+       else {let minima= Math.min.apply(null,v)      //Number.MIN_VALUE; // <-- CORRIGE E IMPLEMENTA EL CODIGO
     
     return minima;
+}
 }
 /**
  * Obtiene la nota Máxima
@@ -35,9 +39,15 @@ function calcularMinimo(v)
  */
 function calcularMaximo(v)
 {
+if (v.length == 0){
+    return 0
+   } 
+   else {
+
     let maxima= Math.max.apply(null,v)    //  Number.MAX_VALUE; // <-- CORRIGE E IMPLEMENTA EL CODIGO
 
     return maxima;
+}
 }
 /**
  * Cuenta el número de aprobados
