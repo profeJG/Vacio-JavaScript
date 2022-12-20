@@ -8,9 +8,9 @@ function esMayorEdad(edad)
 {
     // Completa el código de la función
     if (edad>17) {
-        return 1
+        return true;
       } else {
-        return 0
+        return false;
       }  
     
 }
@@ -25,24 +25,26 @@ function obtenerCalificacion(nota)
 
             // Estructura de control *** switch(nota) ***
             // Completa el código de la función
+            
+            
             switch(nota){
                 case 0:
-                    calificacion = "Muy deficiente.";
+                    calificacion = "Muy deficiente";
                       break;
                     case 1:
-                    calificacion = "Muy deficiente.";
+                    calificacion = "Muy deficiente";
                     break;
                     case 2:
-                    calificacion = "Muy deficiente.";
+                    calificacion = "Muy deficiente";
                       break;
                     case 3:
-                    calificacion = "Deficiente.";
+                    calificacion = "Insuficiente";
                       break;
                     case 4:
-                    calificacion = "Deficiente.";
+                    calificacion = "Insuficiente";
                       break;
                     case 5:
-                    calificacion = "Suficiente.";
+                    calificacion = "Suficiente";
                       break;
                     case 6:
                       calificacion = "Bien";
@@ -90,3 +92,8 @@ function averiguarCalificacion()
         
     document.getElementById("txtCalificacion").innerHTML="Calificación: "+obtenerCalificacion(nota);
 }
+module.exports={
+  esMayorEdad,
+  obtenerCalificacion
+ 
+};

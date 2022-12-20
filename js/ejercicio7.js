@@ -9,7 +9,19 @@
 
 function fibonacci(n)
  {
-     let vector=new Array(); // Creamos un vector para alamcenar el cálculo
+     
+    if(n.length==0){
+        let vector=new Array();
+        return vector;
+    }
+    else if(n.length==1){
+        let vector=new Array();
+        vector[0]=1;
+        return vector
+    }    
+    else{
+    
+    let vector=new Array(); // Creamos un vector para alamcenar el cálculo
      //let x=parseInt(prompt("Indique el número de elementos de la serie de Fibonacci: "));
      
      vector[0]=1
@@ -28,6 +40,7 @@ function fibonacci(n)
     return vector; // Retorno de la función
 //
     }
+}
 
  function appMain()
  {
