@@ -7,7 +7,11 @@
 function calcularMedia(v) // es equivalente a calcularmedia(notas, que es el array de las notas)
 {
 
-// aplicamos reduce sobre v, pasandole acc como valor acomulado, y item que seria cada elemento del array i[0], i[1], etc
+    if (v.length == 0){
+        return 0
+       } 
+       else {
+        // aplicamos reduce sobre v, pasandole acc como valor acomulado, y item que seria cada elemento del array i[0], i[1], etc
 const res = v.reduce( (acc, item) => {
     //nos devuelve que el acomulado es el anterior mas elemento actual
 return acc = acc + item;
@@ -21,6 +25,7 @@ return avg
 
 
 }
+}
 
 
 /**
@@ -29,11 +34,14 @@ return avg
  * @returns minima
  */
 function calcularMinimo(v) // es equivalente a calcularminimo(notas, que es el array de las notas)
-{
+
 
 // aplicamos reduce sobre v, pasandole acc como valor acomulado, y item que seria cada elemento del array i[0], i[1], etc
-  
-const res = v.reduce( (acc, item) => {
+  {
+if (v.length == 0){
+    return 0
+   } 
+   else {const res = v.reduce( (acc, item) => {
 //si el acomulado es mayor que el numero actual, hacemos que el acomulado pase a ser el numero pasado, si no permanece igual
 if (acc>=item){
 acc = item;
@@ -52,6 +60,7 @@ return res
 
 
 }
+  }
 /**
  * Obtiene la nota Máxima
  * @param {Array} v 
@@ -59,6 +68,10 @@ return res
  */
 function calcularMaximo(v) // es equivalente a calcularmaximo(notas, que es el array de las notas)
 {
+    if (v.length == 0){
+        return 0
+       } 
+       else {
 // aplicamos reduce sobre v, pasandole acc como valor acomulado, y item que seria cada elemento del array i[0], i[1], etc
 //const acc = 10  
 const res = v.reduce( (acc, item) => {
@@ -79,6 +92,8 @@ return acc
 return res
 
 }
+}
+
 /**
  * Cuenta el número de aprobados
  * @param {Array} v 
@@ -143,7 +158,7 @@ function appMain(){
     console.log("Suspensos: "+contarSuspensos(notas));
     return 0;
 }
-/*
+
 // Exportamos las funciones para poder realizar el Testing
 module.exports={
     calcularMedia,
@@ -151,4 +166,4 @@ module.exports={
     calcularMinimo,
     contarAprobados,
     contarSuspensos,
-};*/
+};
