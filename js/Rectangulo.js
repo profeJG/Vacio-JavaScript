@@ -14,7 +14,9 @@ class Rectangulo extends Figura{
      */
     constructor(o,b,h)
     {
-        // COMPLETA EL CÓDIGO
+        super(o,b,h);
+        this.base=b;
+        this.altura=h;
     }
     /**
      * Área del Rectángulo.
@@ -22,8 +24,8 @@ class Rectangulo extends Figura{
      */
     calcularArea()
     {
-        // COMPLETA EL CODIGO
-        return -1;
+        return this.base*this.altura;
+        //return -1;
     }
     /**
      * Base del Rectángulo.
@@ -45,17 +47,17 @@ class Rectangulo extends Figura{
      * Establece la base del Rectángulo.
      * @param {int} l: base. 
      */
-    setBase(l)
+    setBase(b)
     {
-        this.base=l;
+        this.base=b;
     }
     /**
      * Establece la altura del Rectángulo.
      * @param {int} l: altura. 
      */
-    setAltura(l)
+    setAltura(h)
     {
-        this.altura=l;
+        this.altura=h;
     }
     /**
      * Información sobre el Rectámgulo

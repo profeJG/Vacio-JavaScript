@@ -5,14 +5,14 @@
 
 /**
  * Implementa el Menú 1: Sumar
- * @author: Coloca tu nombre aquí.
+ * @author: Pablo Plaza
  * @return suma
  */
 function menu1()
 {
     // Implemente la opción de la calculadora que permite sumar.
     console.info("Suma:");
-    let sumando1=parseInt(prompt("Introduzca el prmier sumando: ",0));
+    let sumando1=parseInt(prompt("Introduzca el primer sumando: ",0));
     let sumando2=parseInt(prompt("Introduzca el segundo sumando: ",0));
     let resultado=sumando1+sumando2;
     console.log("El resultado de la suma "+sumando1+" + "+sumando2+" es "+resultado);
@@ -21,19 +21,17 @@ function menu1()
 
 /**
  * Implementa el Menú 2: Restar
- * @author: Coloca tu nombre aquí.
+ * @author: Pablo Plaza
  * @return resta
  */
 function menu2()
 {
     // Implemente la opción de la calculadora que permite restar.
-    console.info("Resta:");
-    
+    console.info("Resta:");    
     // IMPLEMENTA TU CÓDIGO AQUÍ
-    let minuendo=0;
-    let sustraendo=0;
-    let resultado=-1;
-
+    let minuendo=parseInt(prompt("Introduzca el minuendo: ",0));
+    let sustraendo=parseInt(prompt("Introduzca el sustraendo: ",0));
+    let resultado=minuendo-sustraendo;
     console.log("El resultado de la resta "+minuendo+" - "+sustraendo+" es "+resultado);
     return resultado;
 }
@@ -46,10 +44,13 @@ function menu3()
 {
     // Implemente la opción de la calculadora que permite multiplicar.
     console.info("Multiplica:");
+    let num1=parseInt(prompt("Introduzca el primer número: ",0));
+    let num2=parseInt(prompt("Introduzca el segundo número: ",0));
+    let resultado=num1*num2;
+    console.log("El resultado de la multiplicación "+num1+" x "+num2+" es "+resultado);
+    return resultado;
     
-    // IMPLEMENTA TU CODIGO AQUÍ 
-
-    return 3;
+    
 }
 
 /**
@@ -61,10 +62,11 @@ function menu4()
 {
     // Implemente la opción de la calculadora que permite dividir.
     console.info("Divide:");
-    
-    // IMPLEMENTA TU CÓDIGO AQUÍ
-
-    return 4;
+    let dividendo=parseInt(prompt("Introduzca el dividendo: ",0));
+    let divisor=parseInt(prompt("Introduzca el divisor: ",0));
+    let resultado=dividendo/divisor;
+    console.log("El resultado de la división "+dividendo+" : "+divisor+" es "+resultado);
+    return resultado;
 
 }
 

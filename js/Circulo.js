@@ -11,7 +11,7 @@ class Circulo extends Figura{
      */
     constructor(o,r)
     {
-        super(o);
+        super(o,r);
         this.radio=r;
     }
     /**
@@ -20,7 +20,8 @@ class Circulo extends Figura{
      */
     calcularArea()
     {       
-        return (-3); // <-- COMPLETA Y CORRIGE EL CÓDIGO
+       
+        return Math.PI*Math.pow(this.radio,2);//(-3); // <-- COMPLETA Y CORRIGE EL CÓDIGO
     }
     /**
      * Calcula el perímetro de la circunferencia,
@@ -28,7 +29,8 @@ class Circulo extends Figura{
      */
     calcularPerimetro()
     {
-        return (2); // <-- COMPLETA Y CORRIGE EL CÓDIGO
+       
+        return Math.PI*(this.radio*2);//(2); // <-- COMPLETA Y CORRIGE EL CÓDIGO
     }
     /**
      * Obtiene el radio del circulo
